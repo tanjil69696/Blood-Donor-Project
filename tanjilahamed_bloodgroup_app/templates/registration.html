@@ -1,0 +1,20 @@
+<html>
+    <head>
+        
+    </head>
+
+    <body>
+        <form action="insert" method="POST">
+            {% csrf_token %}
+
+            name : <input type="text" name="name"> <br> <br>
+            number : <input type="number" name="number"> <br> <br>
+            address : <input type="text" name="address"> <br> <br>
+            bloodgroup : <input type="text" name="bloodgroup"> <br> <br>
+            donationdate : <input type="date" name="donationdate"> <br> <br>
+            <button type="submit"> submit </button>
+
+        </form>
+        
+    </body>
+</html>

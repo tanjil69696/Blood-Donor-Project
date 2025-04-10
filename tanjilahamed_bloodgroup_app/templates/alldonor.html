@@ -1,0 +1,34 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h1 align="center"> Donor List </h1>
+        <table border="1" cellspacing="2" align="center">
+            <tr>
+                <td> ID </td>
+                <td> NAME </td>
+                <td> NUMBER </td>
+                <td> ADDRESS </td>
+                <td>BLOOD_GROUP</td>
+                <td> DONATION_DATE </td>
+            </tr>
+
+            {% for item in data %}
+
+            <tr>
+                <td> {{item.id}} </td>
+                <td> {{item.name}} </td>
+                <td> {{item.number}} </td>
+                <td> {{item.address}} </td>
+                <td> {{item.bloodgroup}} </td>
+                <td> {{item.donationdate}} </td>
+            </tr>
+
+            {%endfor%}
+            
+
+        </table>
+    </body>
+</html>
